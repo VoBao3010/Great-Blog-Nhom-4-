@@ -1,0 +1,787 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="//fonts.googleapis.com/css?family=Nunito:400,600,700,800&display=swap" rel="stylesheet">
+
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="assets/css/style-starter.css">
+
+</head>
+
+<body>
+    <script src="//m.servedby-buysellads.com/monetization.js" type="text/javascript"></script>
+    <script>
+        (function () {
+            if (typeof _bsa !== 'undefined' && _bsa) {
+                // format, zoneKey, segment:value, options
+                _bsa.init('flexbar', 'CKYI627U', 'placement:w3layoutscom');
+            }
+        })();
+    </script>
+    <script>
+        (function () {
+            if (typeof _bsa !== 'undefined' && _bsa) {
+                // format, zoneKey, segment:value, options
+                _bsa.init('fancybar', 'CKYDL2JN', 'placement:demo');
+            }
+        })();
+    </script>
+    <script>
+        (function () {
+            if (typeof _bsa !== 'undefined' && _bsa) {
+                // format, zoneKey, segment:value, options
+                _bsa.init('stickybox', 'CKYI653J', 'placement:w3layoutscom');
+            }
+        })();
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src='https://www.googletagmanager.com/gtag/js?id=G-98H8KRKT85'></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-98H8KRKT85');
+    </script>
+
+    <meta name="robots" content="noindex">
+
+    <body>
+        <link rel="stylesheet" href="/assests/css/font-awesome.min.css">
+        <!-- New toolbar-->
+        <style>
+            * {
+                box-sizing: border-box;
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            }
+
+
+            #w3lDemoBar.w3l-demo-bar {
+                top: 0;
+                right: 0;
+                bottom: 0;
+                z-index: 9999;
+                padding: 40px 5px;
+                padding-top: 70px;
+                margin-bottom: 70px;
+                background: #0D1326;
+                border-top-left-radius: 9px;
+                border-bottom-left-radius: 9px;
+            }
+
+            #w3lDemoBar.w3l-demo-bar a {
+                display: block;
+                color: #e6ebff;
+                text-decoration: none;
+                line-height: 24px;
+                opacity: .6;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+
+            #w3lDemoBar.w3l-demo-bar span.w3l-icon {
+                display: block;
+            }
+
+            #w3lDemoBar.w3l-demo-bar a:hover {
+                opacity: 1;
+            }
+
+            #w3lDemoBar.w3l-demo-bar .w3l-icon svg {
+                color: #e6ebff;
+            }
+
+            #w3lDemoBar.w3l-demo-bar .responsive-icons {
+                margin-top: 30px;
+                border-top: 1px solid #41414d;
+                padding-top: 40px;
+            }
+
+            #w3lDemoBar.w3l-demo-bar .demo-btns {
+                border-top: 1px solid #41414d;
+                padding-top: 30px;
+            }
+
+            #w3lDemoBar.w3l-demo-bar .responsive-icons a span.fa {
+                font-size: 26px;
+            }
+
+            #w3lDemoBar.w3l-demo-bar .no-margin-bottom {
+                margin-bottom: 0;
+            }
+
+            .toggle-right-sidebar span {
+                background: #0D1326;
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+                color: #e6ebff;
+                border-radius: 50px;
+                font-size: 26px;
+                cursor: pointer;
+                opacity: .5;
+            }
+
+            .pull-right {
+                float: right;
+                position: fixed;
+                right: 0px;
+                top: 70px;
+                width: 90px;
+                z-index: 99999;
+                text-align: center;
+            }
+
+            /* ============================================================
+RIGHT SIDEBAR SECTION
+============================================================ */
+
+            #right-sidebar {
+                width: 90px;
+                position: fixed;
+                height: 100%;
+                z-index: 1000;
+                right: 0px;
+                top: 0;
+                margin-top: 60px;
+                -webkit-transition: all .5s ease-in-out;
+                -moz-transition: all .5s ease-in-out;
+                -o-transition: all .5s ease-in-out;
+                transition: all .5s ease-in-out;
+                overflow-y: auto;
+            }
+
+
+            /* ============================================================
+RIGHT SIDEBAR TOGGLE SECTION
+============================================================ */
+
+            .hide-right-bar-notifications {
+                margin-right: -300px !important;
+                -webkit-transition: all .3s ease-in-out;
+                -moz-transition: all .3s ease-in-out;
+                -o-transition: all .3s ease-in-out;
+                transition: all .3s ease-in-out;
+            }
+
+
+
+            @media (max-width: 992px) {
+                #w3lDemoBar.w3l-demo-bar a.desktop-mode {
+                    display: none;
+
+                }
+            }
+
+            @media (max-width: 767px) {
+                #w3lDemoBar.w3l-demo-bar a.tablet-mode {
+                    display: none;
+
+                }
+            }
+
+            @media (max-width: 568px) {
+                #w3lDemoBar.w3l-demo-bar a.mobile-mode {
+                    display: none;
+                }
+
+                #w3lDemoBar.w3l-demo-bar .responsive-icons {
+                    margin-top: 0px;
+                    border-top: none;
+                    padding-top: 0px;
+                }
+
+                #right-sidebar,
+                .pull-right {
+                    width: 90px;
+                }
+
+                #w3lDemoBar.w3l-demo-bar .no-margin-bottom-mobile {
+                    margin-bottom: 0;
+                }
+            }
+        </style>
+
+        <!--header-->
+        <header id="site-header" class="fixed-top">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg stroke p-0">
+                    <h1> <a class="navbar-brand" href="index.html">
+                            <span class="fa fa-bell-o"></span> ArThur Blog
+                        </a></h1>
+                    <!-- if logo is image enable this   
+  <a class="navbar-brand" href="#index.html">
+      <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+  </a> -->
+                    <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
+                        data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                        <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav ml-lg-5 mr-lg-auto">
+                            <li class="nav-item @@home__active">
+                                <a class="nav-link" href="index.html">Trang chủ <span
+                                        class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item @@about__active">
+                                <a class="nav-link" href="about.html">Về ArThur</a>
+                            </li>
+                            <li class="nav-item dropdown active">
+                                <a class="nav-link dropdown-toggle" href="#Blog" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Bài viết <span class="fa fa-angle-down"></span>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item active" href="blogpost.html">Tất cả các bài viết</a>
+                                    <a class="dropdown-item @@bs__active" href="blogsingle.html">Bài viết mới nhất</a>
+                                </div>
+                            </li>
+                            <li class="nav-item @@home__active">
+                                <a class="nav-link" href="gallerypage.html">Trang</a>
+                              </li>
+                            <li class="nav-item @@contact__active">
+                                <a class="nav-link" href="contact.html">Liên hệ</a>
+                            </li>
+                        </ul>
+
+                        <!--/search-right-->
+                        <div class="navbar-nav search-right nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#Pages" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="fa fa-search"></span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <div class="search_form">
+                                    <form action="searchpage.html" method="GET">
+                                        <input type="text" placeholder="Search">
+                                        <button type="submit" class="btn" value=""><span class="fa fa-search"
+                                                aria-hidden="true"></span></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!--//search-right-->
+                    </div>
+                    <!-- toggle switch for light and dark theme -->
+                    <div class="mobile-position">
+                        <nav class="navigation">
+                            <div class="theme-switch-wrapper">
+                                <label class="theme-switch" for="checkbox">
+                                    <input type="checkbox" id="checkbox">
+                                    <div class="mode-container">
+                                        <i class="gg-sun"></i>
+                                        <i class="gg-moon"></i>
+                                    </div>
+                                </label>
+                            </div>
+                        </nav>
+                    </div>
+                    <!-- //toggle switch for light and dark theme -->
+                </nav>
+            </div>
+        </header>
+        <!--/header-->
+        <div class="blog-posts w3l-homeblock1 py-5">
+            <div class="container py-lg-4 py-md-3">
+                <!-- block -->
+                <div class="most-recent">
+                    <div class="row">
+                        <div class="col-lg-8 item">
+                            <div class="card mb-5">
+                                <div class="card-header p-0 position-relative">
+                                    <a href="blogsingle.html">
+                                        <img class="card-img-bottom d-block radius-image" src="assets/images/3.jpg"
+                                            alt="Card image cap">
+                                    </a>
+                                    <div class="post-pos">
+                                        <a href="#reciepe" class="receipe recipe">Công thức</a>
+                                    </div>
+                                </div>
+                                <div class="card-body p-0 blog-details">
+                                    <a href="blogsingle.html" class="blog-desc">Macaron Pháp, một loại bánh ngọt làm từ
+                                        lòng trắng trứng, đường bột, đường cát, bột hạnh nhân và phẩm màu thực phẩm.
+                                    </a>
+                                    <p>Macaron là một loại bánh ngọt có nguồn gốc từ Pháp, được làm từ lòng trắng trứng,
+                                        đường bột, đường cát, bột hạnh nhân và phẩm màu thực phẩm. Macaron có đặc điểm
+                                        là có lớp vỏ giòn bên ngoài và lớp nhân mềm mịn bên trong.</p>
+                                    <div class="p-footer mt-3">
+                                        <div class="p-meta-info">
+                                            <a href="#img" class="post-img-anchor">
+                                                <img src="assets/images/a1.jpg" alt=""
+                                                    class="post-img radius-img img-fluid">
+                                            </a>
+                                            <a href="#url">ArThur Bui</a>
+                                            <span class="post-date ml-3"><span class="fa fa-clock-o"
+                                                    aria-hidden="true"></span>
+                                                10 tháng 10 , 2023</span>
+                                        </div>
+                                        <a href="#read" class="read">Xem tiếp <span class="fas fa-arrow-right"
+                                                aria-hidden="true"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mb-5">
+                                <div class="card-header p-0 position-relative">
+                                    <a href="blogsingle.html">
+                                        <img class="card-img-bottom d-block radius-image" src="assets/images/1.jpg"
+                                            alt="Card image cap">
+                                    </a>
+                                    <div class="post-pos">
+                                        <a href="#reciepe" class="receipe orange">Công thức</a>
+                                    </div>
+                                </div>
+                                <div class="card-body p-0 blog-details">
+                                    <a href="blogsingle.html" class="blog-desc">Bánh cupcake hồng mơ được làm bằng cách
+                                        đánh bông bơ và đường với nhau cho đến khi tạo thành hỗn hợp mịn, bông xốp.
+                                    </a>
+                                    <p>
+                                        Bánh cupcake hồng mơ được làm bằng cách đánh bông bơ và đường với nhau cho đến
+                                        khi tạo thành hỗn hợp mịn, bông xốp.
+
+                                        Creaming the butter and sugar together là một kỹ thuật trong làm bánh được sử
+                                        dụng để tạo ra một hỗn hợp mịn, bông xốp.</p>
+                                    <div class="p-footer mt-3">
+                                        <div class="p-meta-info">
+                                            <a href="#img" class="post-img-anchor">
+                                                <img src="assets/images/a2.jpg" alt=""
+                                                    class="post-img radius-img img-fluid">
+                                            </a>
+                                            <a href="#url">Hiếu Bảo</a>
+                                            <span class="post-date ml-3"><span class="fa fa-clock-o"
+                                                    aria-hidden="true"></span>
+                                                5 tháng 10, 2023</span>
+                                        </div>
+                                        <a href="#read" class="read">Xem tiếp <span class="fas fa-arrow-right"
+                                                aria-hidden="true"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mb-5">
+                                <div class="card-header p-0 position-relative">
+                                    <a href="blogsingle.html">
+                                        <img class="card-img-bottom d-block radius-image" src="assets/images/2.jpg"
+                                            alt="Card image cap">
+                                    </a>
+                                    <div class="post-pos">
+                                        <a href="#reciepe" class="receipe blue">Phương pháp</a>
+                                    </div>
+                                </div>
+                                <div class="card-body p-0 blog-details">
+                                    <a href="blogsingle.html" class="blog-desc">Cách làm bánh cupcake vani hoàn hảo
+                                    </a>
+                                    <p>Bánh cupcake vani là một món ăn nhẹ phổ biến và dễ làm. Với công thức đơn giản
+                                        này, bạn có thể dễ dàng làm ra những chiếc bánh cupcake vani thơm ngon và mềm
+                                        mịn.</p>
+                                    <div class="p-footer mt-3">
+                                        <div class="p-meta-info">
+                                            <a href="#img" class="post-img-anchor">
+                                                <img src="assets/images/a3.png" alt=""
+                                                    class="post-img radius-img img-fluid">
+                                            </a>
+                                            <a href="#url">Thành Bảo</a>
+                                            <span class="post-date ml-3"><span class="fa fa-clock-o"
+                                                    aria-hidden="true"></span>
+                                                6 tháng 10, 2023</span>
+                                        </div>
+                                        <a href="#read" class="read">Xem tiếp <span class="fas fa-arrow-right"
+                                                aria-hidden="true"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mb-5">
+                                <div class="card-header p-0 position-relative">
+                                    <a href="blogsingle.html">
+                                        <img class="card-img-bottom d-block radius-image" src="assets/images/4.jpg"
+                                            alt="Card image cap">
+                                    </a>
+                                    <div class="post-pos">
+                                        <a href="#reciepe" class="receipe green">Công thức</a>
+                                    </div>
+                                </div>
+                                <div class="card-body p-0 blog-details">
+                                    <a href="blogsingle.html" class="blog-desc">Những công thức làm bánh quy ngon nhất
+                                        để nướng cuối tuần
+                                    </a>
+                                    <p>
+                                        Bánh quy là một món ăn nhẹ phổ biến và dễ làm. Có rất nhiều loại bánh quy khác
+                                        nhau, từ bánh quy cơ bản đến bánh quy trang trí. Dưới đây là một số công thức
+                                        làm bánh quy ngon nhất để nướng cuối tuần:</p>
+                                    <div class="p-footer mt-3">
+                                        <div class="p-meta-info">
+                                            <a href="#img" class="post-img-anchor">
+                                                <img src="assets/images/a4.jpg" alt=""
+                                                    class="post-img radius-img img-fluid">
+                                            </a>
+                                            <a href="#url">LinhLe</a>
+                                            <span class="post-date ml-3"><span class="fa fa-clock-o"
+                                                    aria-hidden="true"></span>
+                                                16 tháng 10, 2023</span>
+                                        </div>
+                                        <a href="#read" class="read">Xem tiếp <span class="fas fa-arrow-right"
+                                                aria-hidden="true"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header p-0 position-relative">
+                                    <a href="blogsingle.html">
+                                        <img class="card-img-bottom d-block radius-image" src="assets/images/5.jpg"
+                                            alt="Card image cap">
+                                    </a>
+                                    <div class="post-pos">
+                                        <a href="#reciepe" class="receipe blue">Phương pháp</a>
+                                    </div>
+                                </div>
+                                <div class="card-body p-0 blog-details">
+                                    <a href="blogsingle.html" class="blog-desc">
+                                        Salad rau xanh với nước sốt vinaigrette dâu tây
+                                    </a>
+                                    <p>Đây là một công thức salad đơn giản và ngon miệng, hoàn hảo cho bữa ăn nhẹ hoặc
+                                        bữa tối. Nước sốt vinaigrette dâu tây ngọt ngào và chua nhẹ, kết hợp hoàn hảo
+                                        với vị tươi mát của rau xanh.</p>
+                                    <div class="p-footer mt-3">
+                                        <div class="p-meta-info">
+                                            <a href="#img" class="post-img-anchor">
+                                                <img src="assets/images/a5.jpg" alt=""
+                                                    class="post-img radius-img img-fluid">
+                                            </a>
+                                            <a href="#url">Hải Duy</a>
+                                            <span class="post-date ml-3"><span class="fa fa-clock-o"
+                                                    aria-hidden="true"></span>
+                                                8 tháng 10, 2023</span>
+                                        </div>
+                                        <a href="#read" class="read">Xem tiếp<span class="fas fa-arrow-right"
+                                                aria-hidden="true"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 item mt-lg-0 mt-5">
+                            <div class="sticky">
+                                <div class="sidebar-widget sidebar-blog-category ">
+                                    <div class="author">
+                                        <div class="sidebar-title mb-4">
+                                            <h3 class="title-left">Về đầu bếp</h3>
+                                        </div>
+                                        <div class="author-detalis">
+                                            <a href="#author" class="author-image"><img src="assets/images/a1.jpg"
+                                                    alt="author image" class="img-fluid"></a>
+                                            <div class="author-info">
+                                                <a href="#author-name" class="author-name">Tôi là ArThur Bui</a>
+                                                <a href="#follow" class="btn btn-outline-primary">Theo dõi </a>
+                                            </div>
+                                        </div>
+                                        <p class="mt-2">Tôi đã luôn yêu thích nấu ăn và nướng bánh từ khi còn nhỏ. Cảm
+                                            giác khi nhìn thấy
+                                            chiếc bánh tươi ngon ra lò, với hương thơm lan tỏa trong căn bếp, luôn khiến
+                                            tôi
+                                            thấy hạnh phúc.</p>
+                                        <div class="social text-center mt-3">
+                                            <ul class="d-flex">
+                                                <li class="mr-2">
+                                                    <a href="#" class="facebook"><span class="fab fa-facebook-f"
+                                                            aria-hidden="true"></span></a>
+                                                </li>
+                                                <li class="mr-2">
+                                                    <a href="#" class="twitter"><span class="fab fa-twitter"
+                                                            aria-hidden="true"></span></a>
+                                                </li>
+                                                <li class="mr-2">
+                                                    <a href="#" class="rss"><span class="fas fa-rss"
+                                                            aria-hidden="true"></span></a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="#" class="linkedin"><span class="fab fa-linkedin-in"
+                                                            aria-hidden="true"></span></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="sidebar-widget popular-posts">
+                                    <div class="sidebar-title mb-4">
+                                        <h3 class="title-left">Các công thức nấu ăn mới nhất</h3>
+                                    </div>
+
+                                    <article class="post-recipe">
+                                        <figure class="post-thumb">
+                                            <img src="assets/images/cake1.jpg" class="img-fluid radius-image" alt="">
+                                            <div class="text-small"><a href="blogsingle.html">Các làm bánh Tiramisu</a>
+                                            </div>
+                                        </figure>
+                                        <figure class="post-thumb">
+                                            <img src="assets/images/cake2.jpg" class="img-fluid radius-image" alt="">
+                                            <div class="text-small"><a href="blogsingle.html"> Công thức bánh Sachertorte
+                                                </a>
+                                            </div>
+                                        </figure>
+                                        <figure class="post-thumb">
+                                            <img src="assets/images/cake3.jpg" class="img-fluid radius-image" alt="">
+                                            <div class="text-small"><a href="blogsingle.html">
+                                                    Công thức bánh Victoria Sponge ngon nhất</a>
+                                            </div>
+                                        </figure>
+                                        <figure class="post-thumb">
+                                            <img src="assets/images/cake4.jpg" class="img-fluid radius-image" alt="">
+                                            <div class="text-small"><a href="blogsingle.html">
+                                                    12 điều lưu ý khi làm bánh Lamington</a>
+                                            </div>
+                                        </figure>
+                                    </article>
+                                </div>
+
+                                <div class="sidebar-widget popular-posts">
+                                    <div class="sidebar-title mb-4">
+                                        <h3 class="title-left">Bài viết thịnh hành</h3>
+                                    </div>
+
+                                    <article class="post">
+                                        <figure class="post-thumb"><img src="assets/images/recipe.jpg" class="img-fluid"
+                                                alt="">
+                                        </figure>
+                                        <div class="text"><a href="blogsingle.html" class="nameblog">12 Công Thức Cà Ri Bạn Sẽ Cần
+                                            </a>
+                                            <div class="post-info">7 tháng 10, 2023</div>
+                                        </div>
+                                    </article>
+
+                                    <article class="post">
+                                        <figure class="post-thumb"><img src="assets/images/drinks.jpg" class="img-fluid"
+                                                alt="">
+                                        </figure>
+                                        <div class="text"><a href="blogsingle.html" class="nameblog">Nước Dâu Ngọt Ngào Cho Mùa Hè
+                                            </a>
+                                            <div class="post-info">15 tháng 10, 2023</div>
+                                        </div>
+                                    </article>
+
+                                    <article class="post">
+                                        <figure class="post-thumb"><img src="assets/images/video.jpg" class="img-fluid"
+                                                alt="">
+                                        </figure>
+                                        <div class="text"><a href="blogsingle.html" class="nameblog"> Cách làm bánh pancake đơn giản nhất</a>
+                                            <div class="post-info">16 tháng 10, 2023   </div>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <div class="sidebar-widget sidebar-blog-category">
+                                    <div class="sidebar-title">
+                                        <h3 class="title-left mb-4">Danh mục</h3>
+                                    </div>
+                                    <ul class="blog-cat">
+                                        <li><a href="#url">Món tráng miệng </a></li>
+                                        <li><a href="#url">Bánh ngọt và bánh quy</a></li>
+                                        <li><a href="#url">Công thức nấu ăn</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="sidebar-widget">
+                                    <h3 class="title-left mb-4">
+                                        Quảng cáo</h3>
+                                    <a href="#ad">
+                                        <img src="assets/images/1.jpg" alt=" " class="img-fluid radius-image">
+                                    </a>
+                                </div>
+                                <div class="sidebar-widget subscribe">
+                                    <div class="sidebar-title">
+                                        <h3 class="title-left mb-4">Đăng ký để có thông tin hữu ích nhất</h3>
+                                        <form class="form-inline subscribe-form" action="#" method="GET">
+                                            <input class="form-control" type="email" placeholder="Enter your email"
+                                                aria-label="email" required="">
+                                            <button class="btn" type="submit"><span class="fa fa-search"
+                                                    aria-hidden="true"></span></button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //block-->
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+    <footer class="py-5">
+        <div class="container pt-md-5">
+          <div class="footer-logo mb-lg-5 mb-4 text-center">
+            <a class="navbar-brand" href="index.html"><span class="fa fa-bell-o"></span> ArThur Blog</a>
+          <p>Cảm ơn bạn đã ghé thăm trang blog làm bánh của chúng tôi. Chúng tôi hy vọng rằng bạn đã tìm thấy
+            những công thức và mẹo hữu ích cho việc làm bánh của mình.</p>
+          </div>
+          <div class="footer-grid">
+            <div class="w3l-copyright text-center">
+              <div class="social text-center">
+                <ul class="d-flex justify-content-center">
+                  <li class="mx-md-2 mx-1"><a href="https://www.facebook.com/profile.php?id=100014706486406" class="facebook"><span class="fab fa-facebook-f"></span></a></li>
+                  <li class="mx-md-2 mx-1"><a href="#url" class="twitter"><span class="fab fa-twitter"></span></a></li>
+                  <li class="mx-md-2 mx-1"><a href="#url" class="rss"><span class="fas fa-rss"></span></a></li>
+                  <li class="mx-md-2 mx-1"><a href="#url" class="linkedin"><span class="fab fa-linkedin-in"></span></a></li>
+                  <li class="mx-md-2 mx-1"><a href="#url" class="google"><span class="fab fa-google-plus"></span></a></li>
+                </ul>
+              </div>
+              <p class="mt-4">© 2023 ArThur. All Rights Reserved</p>
+            </div>
+          </div>
+  
+        </div>
+      </footer>
+      <!-- footer -->
+
+        <!-- move top -->
+        <button onclick="topFunction()" id="movetop" title="Go to top">
+            &#10548;
+        </button>
+        <script>
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () {
+                scrollFunction()
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("movetop").style.display = "block";
+                } else {
+                    document.getElementById("movetop").style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+        <!-- /move top -->
+
+        <script src="assets/js/theme-change.js"></script><!-- theme switch js (light and dark)-->
+
+        <script src="assets/js/jquery-3.3.1.min.js"></script><!-- default jQuery -->
+
+        <script src="https://kit.fontawesome.com/af562a2a63.js" crossorigin="anonymous"></script>
+
+        <!-- libhtbox -->
+        <script src="assets/js/lightbox-plus-jquery.min.js"></script>
+
+        <!-- owlcarousel -->
+        <script src="assets/js/owl.carousel.js"></script>
+        <!-- script for banner typing text -->
+        <script>
+            function autoType(elementClass, typingSpeed) {
+                var thhis = $(elementClass);
+                thhis.css({
+                    "position": "relative",
+                    "display": "inline-block"
+                });
+                thhis.prepend('<div class="cursor" style="right: initial; left:0;"></div>');
+                thhis = thhis.find(".text-js");
+                var text = thhis.text().trim().split('');
+                var amntOfChars = text.length;
+                var newString = "";
+                thhis.text("|");
+                setTimeout(function () {
+                    thhis.css("opacity", 1);
+                    thhis.prev().removeAttr("style");
+                    thhis.text("");
+                    for (var i = 0; i < amntOfChars; i++) {
+                        (function (i, char) {
+                            setTimeout(function () {
+                                newString += char;
+                                thhis.text(newString);
+                            }, i * typingSpeed);
+                        })(i + 1, text[i]);
+                    }
+                }, 1500);
+            }
+
+            $(document).ready(function () {
+                // Now to start autoTyping just call the autoType function with the 
+                // class of outer div
+                // The second paramter is the speed between each letter is typed.   
+                autoType(".type-js", 200);
+            });
+        </script>
+        <!-- //script for banner typing text -->
+
+        <!-- script for carousel slider -->
+        <script>
+            $(document).ready(function () {
+                $("#owl-demo1").owlCarousel({
+                    loop: true,
+                    nav: false,
+                    margin: 30,
+                    responsiveClass: true,
+                    responsive: {
+                        0: {
+                            items: 1,
+                            nav: false
+                        },
+                        767: {
+                            items: 2,
+                            nav: false
+                        },
+                        992: {
+                            items: 4,
+                            nav: false
+                        }
+                    }
+                })
+            })
+        </script>
+        <!-- //script for carousel slider -->
+
+        <!-- disable body scroll which navbar is in active -->
+        <script>
+            $(function () {
+                $('.navbar-toggler').click(function () {
+                    $('body').toggleClass('noscroll');
+                })
+            });
+        </script>
+        <!-- disable body scroll which navbar is in active -->
+
+        <!--/MENU-JS-->
+        <script>
+            $(window).on("scroll", function () {
+                var scroll = $(window).scrollTop();
+
+                if (scroll >= 80) {
+                    $("#site-header").addClass("nav-fixed");
+                } else {
+                    $("#site-header").removeClass("nav-fixed");
+                }
+            });
+
+            //Main navigation Active Class Add Remove
+            $(".navbar-toggler").on("click", function () {
+                $("header").toggleClass("active");
+            });
+            $(document).on("ready", function () {
+                if ($(window).width() > 991) {
+                    $("header").removeClass("active");
+                }
+                $(window).on("resize", function () {
+                    if ($(window).width() > 991) {
+                        $("header").removeClass("active");
+                    }
+                });
+            });
+        </script>
+        <!--//MENU-JS-->
+
+        <!-- bootstrap js -->
+        <script src="assets/js/bootstrap.min.js"></script>
+
+
+    </body>
+
+</html>
